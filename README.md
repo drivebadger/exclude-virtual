@@ -3,7 +3,8 @@ This is an extension for Drive Badger. It provides `exclude.list` file, containi
 The purpose of these exclusions is to decrease the amount of data to be exfiltrated by Drive Badger, and thus to speed up the attack,
 by eliminating files and directories, that are not valuable in any way to the attacker:
 
-- VMDK files (images of VMware virtual drives)
+- Hyper-V virtual drive images (current format: VHDX, AVHDX, VMRS; legacy format: VHD, AVHD, BIN)
+- VMware virtual drive images (VMDK)
 - ISO images
 
 ### Installing
