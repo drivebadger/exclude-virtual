@@ -3,8 +3,7 @@ This is an extension for Drive Badger. It provides `exclude.list` file, containi
 The purpose of these exclusions is to decrease the amount of data to be exfiltrated by Drive Badger, and thus to speed up the attack,
 by eliminating files and directories, that are not valuable in any way to the attacker:
 
-- Hyper-V virtual drive images (current format: VHDX, AVHDX, VMRS; legacy format: VHD, AVHD, BIN)
-- VMware virtual drive images (VMDK)
+- Hyper-V virtual machine state files (current format VMRS and legacy BIN)
 - ISO images
 
 ### Installing
@@ -12,7 +11,7 @@ by eliminating files and directories, that are not valuable in any way to the at
 Clone this repository as `/opt/drivebadger/config/exclude-virtual` directory on your Drive Badger persistent partition.
 
 When you install this extension, you should also install [`hook-virtual`](https://github.com/drivebadger/hook-virtual)
-hook - otherwise you will exclude all VMware virtual drives without exfiltrating them from inside.
+hook - it dynamically applies additional exclude rules.
 
 
 ### More information

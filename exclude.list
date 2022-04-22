@@ -1,8 +1,3 @@
 *.VMRS
 *.bin
-*.avhd
-*.avhdx
-*.vhd
-*.vhdx
-*.vmdk
 *.iso
